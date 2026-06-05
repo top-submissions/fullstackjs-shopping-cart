@@ -1,11 +1,15 @@
 import { Outlet } from 'react-router';
+import Navbar from '../../components/Navbar/Navbar';
 import styles from './App.module.css';
 
 function App() {
   return (
-    <main className={styles.appShell}>
-      <Outlet />
-    </main>
+    <>
+      <Navbar />
+      <main className={styles.appShell}>
+        <Outlet />
+      </main>
+    </>
   );
 }
 
